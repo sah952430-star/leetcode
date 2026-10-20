@@ -5,8 +5,8 @@ class Solution {
         int n = nums.length;
         for(int i=0; i<nums.length; i++){
             if(i>0 && nums[i]==nums[i-1]) continue;
-            
-            for(int j = i+1;j<n;){
+            int j = i+1;
+            while(j<n){
                 int k = j+1;
                 int m = n-1;
                 while(k <m){
